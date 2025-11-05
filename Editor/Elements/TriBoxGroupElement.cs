@@ -32,7 +32,7 @@ namespace TriInspector.Elements
         })
         {
             _props = props;
-            _expanded = _props.expandedByDefault;
+            _expanded = EditorPrefs.GetBool($"TriInspector.TriBoxGroupElement.{props.title}", _props.expandedByDefault);
         }
 
         protected override void AddPropertyChild(TriElement element, TriProperty property)
@@ -110,6 +110,8 @@ namespace TriInspector.Elements
             {
                 case TitleMode.Foldout:
                     _expanded = EditorGUI.Foldout(headerLabelRect, _expanded, headerContent, true);
+                    EditorPrefs.SetBool($"TriInspector.TriBoxGroupElement.{_props.title}", _expanded);
+
                     break;
                 case TitleMode.Toggle:
                 {
