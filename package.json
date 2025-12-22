@@ -1,10 +1,10 @@
 {
-  "name": "com.codewriter.triinspector",
+  "name": "com.emptybraces.triinspector",
   "displayName": "Tri Inspector",
-  "description": "Advanced inspector attributes for Unity",
+  "description": "Advanced inspector attributes for Unity(Forked from https://github.com/orgs/codewriter-packages)",
   "version": "1.15.1",
   "unity": "2020.3",
-  "author": "CodeWriter (https://github.com/orgs/codewriter-packages)",
+  "author": "emptybraces",
   "homepage": "https://github.com/codewriter-packages/Tri-Inspector#readme",
   "dependencies": {
       "com.unity.localization": "1.0.0"
